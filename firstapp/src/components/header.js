@@ -13,6 +13,7 @@ class Header extends Component {
     inputChange(event){
         console.log(event.target.value)
         this.setState({keyword:event.target.value})
+        this.props.newSearch(event.target.value)
     }
 
     render(){
